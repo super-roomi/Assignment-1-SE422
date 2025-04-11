@@ -1,10 +1,11 @@
 ## Getting Started
 
-Info about the Java I'm running:
+Info about the environment:
 
 - openjdk version "21.0.5" 2024-10-15 LTS
 - OpenJDK Runtime Environment Temurin-21.0.5+11 (build 21.0.5+11-LTS)
 - OpenJDK 64-Bit Server VM Temurin-21.0.5+11 (build 21.0.5+11-LTS)
+- My IDE is VS Code
 
 ## Folder Structure
 
