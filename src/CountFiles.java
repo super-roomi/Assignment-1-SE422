@@ -7,34 +7,33 @@ public class CountFiles {
     }
     public int FileCount(){
         File file = new File(path);
-        String[] allFiles = file.list();
+        String[] allFiles = file.list(); //list all the files in the directory
          
         byte numberOfPdfs = 0;    
 
         for(String fil : allFiles){ //elephant lol 🐘
-            //Check for PDFs in all Files PDFs
-            if(fil.contains("pdf") == true){
+            if(fil.contains("pdf") == true){ //Check for PDFs in all Files PDFs
                 numberOfPdfs++;
             }
         }
 
-        String[] pdfFiles = new String[numberOfPdfs];
+        String[] pdfFiles = new String[numberOfPdfs]; //create new area with the size of the number of PDFs found
         int position = 0;
 
         for(String fil : allFiles){
             if(fil.contains("pdf") == true){
-                pdfFiles[position] = fil;
+                pdfFiles[position] = fil; //Add the PDF files to the new array
                 position++;
             }
         }
 
         for(int i = 0; i < numberOfPdfs; i++){
-            System.out.println(pdfFiles[i]);
+            System.out.println(pdfFiles[i]); //print out the files in the new array
         }
 
-        System.out.println(numberOfPdfs);
-        System.out.println(pdfFiles.length);
-        System.out.println(allFiles.length);
+        System.out.println(numberOfPdfs); //print out the number of files
+        System.out.println(pdfFiles.length); //print out the length fo the new array
+        System.out.println(allFiles.length); //print out the length of the old array containing all the files in the dir
 
         return numberOfPdfs;
     }
